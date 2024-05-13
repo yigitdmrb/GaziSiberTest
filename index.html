@@ -78,6 +78,7 @@
                     puan += (kalanSure+1) * 4;
                 }
                 aktifSoruIndex = (aktifSoruIndex + 1) % sorular.length;
+                document.getElementById('süre').textContent = 'Kalan süre: ';
                 guncelleSoru(aktifSoruIndex);
             });
         });
