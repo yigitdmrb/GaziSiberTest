@@ -1,0 +1,20 @@
+Eray nerelidir ?
+a)suriye
+b)afganistan
+c)düzce
+d)samsun
+yiğit nerelidir ?
+a)TÜRKİYE
+b)TÜRKİYE
+c)TÜRKİYE
+d)TÜRKİYE
+ahmet nerelidir ?
+a)osmaniye
+b)afganistan
+c)düzce
+d)samsun
+murat nerelidir ?
+a)kırgızistan
+b)manavgat
+c)düzce
+d)samsun
