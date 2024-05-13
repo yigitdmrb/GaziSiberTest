@@ -17,8 +17,7 @@ h1 {
 }
 
 button {
-    display: inline-block;
-    text-align: center;
+    display: block;
     width: 40%;
     margin: 10px auto;
     padding: 10px;
