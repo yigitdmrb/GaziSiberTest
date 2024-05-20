@@ -84,10 +84,11 @@
                         guncelleSoru(aktifSoruIndex);
                     }
                 } else {
-                    if(document.getElementById('anaSayfaButonu').style.display === 'block'){document.getElementById('süre').textContent=''}
-                    else{
+                    
+                    
                     document.getElementById('süre').textContent = 'Kalan süre: ' + kalanSure + ' saniye';
-                    kalanSure--; }
+                    kalanSure--;
+                    if(document.getElementById('anaSayfaButonu').style.display === 'block'){document.getElementById('süre').textContent='';}
                 }
             }, 1000); 
         }
@@ -104,7 +105,7 @@
                 guncelleSoru(aktifSoruIndex);
             });
         });
-
+        
         // Ana sayfaya yönlendirme fonksiyonu
         function anaSayfayaDon() {
             window.location.href = 'index.html'; // Ana sayfa URL'sini buraya yazın
