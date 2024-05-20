@@ -1,21 +1,25 @@
 DNS'nin (Domain Name System) temel işlevi nedir?
-a) IP adreslerini alan adlarına çevirmek
-b) E-posta gönderme ve alma
+a) E-posta gönderme ve alma
+b) IP adreslerini alan adlarına çevirmek
 c) Dosya transferi yapmak
 d) Ağ trafiğini yönlendirmek
+b) IP adreslerini alan adlarına çevirmek
 yiğit nerelidir ?
 a)TÜRKİYE
 b)TÜRKİYE
 c)TÜRKİYE
 d)TÜRKİYE
+a)TÜRKİYE
 ahmet nerelidir ?
 a)osmaniye
 b)afganistan
 c)düzce
 d)samsun
+a)osmaniye
 murat nerelidir ?
 a)kırgızistan
 b)manavgat
 c)düzce
 d)samsun
+a)kırgızistan
 
