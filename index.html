@@ -84,8 +84,10 @@
                         guncelleSoru(aktifSoruIndex);
                     }
                 } else {
+                    if(document.getElementById('anaSayfaButonu').style.display === 'block'){document.getElementById('süre').textContent=''}
+                    else{
                     document.getElementById('süre').textContent = 'Kalan süre: ' + kalanSure + ' saniye';
-                    kalanSure--;
+                    kalanSure--; }
                 }
             }, 1000); 
         }
