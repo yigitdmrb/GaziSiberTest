@@ -10,24 +10,25 @@
 
 <!-- Üst bar -->
 <nav> <img src="LogoFull.png" alt="Logo">
-    
     <!-- Buraya üst bar içeriği eklenebilir -->
 </nav>
 
 <div class="container">
     <h1>Siber güvenlik testi</h1>
     <p id="soru"></p>
-    <button id="sik1"></button>
-    <button id="sik2"></button>
-    <button id="sik3"></button>
-    <button id="sik4"></button>
+    <button id="cevap1"></button>
+    <button id="cevap2"></button>
+    <button id="cevap3"></button>
+    <button id="cevap4"></button>
     <p id="süre"></p>
     <p id="puan"></p>
+    <button id="anaSayfaButonu" style="display:none;" onclick="anaSayfayaDon()">Ana Sayfaya Dön</button>
 
     <script>
         const dosyaAdi = 'sorular.txt';
         let sorular = [];
-        let siklar = [];
+        let siklar = [];  // Bu değişkenin adını aynı tuttum çünkü içeriği şıklar
+        let cevaplar = [];
         let puan = 0;
         let aktifSoruIndex = 0;
         let okumaDevamEdiyor = true;
@@ -40,9 +41,11 @@
             .then(veri => {
                 // Dosyadan satırları ayrıştır
                 const satirlar = veri.split('\n');
-                for (let i = 0; i < satirlar.length; i += 5) {
+                for (let i = 0; i < satirlar.length; i += 6) {
+                    if (satirlar[i].trim() === '') break;
                     sorular.push(satirlar[i]);
-                    siklar.push(satirlar.slice(i + 1, i + 5));
+                    siklar.push(satirlar.slice(i + 1, i + 5).map(s => s.substring(2))); // Şık başındaki harfi kaldır
+                    cevaplar.push(satirlar[i + 5].trim().substring(2)); // Cevap başındaki harfi kaldır
                 }
 
                 // Başlangıçta ilk soru ve şıkları ekrana yaz
@@ -52,12 +55,21 @@
 
         // Soru ve şıkları güncelleme fonksiyonu
         function guncelleSoru(index) {
+            if (index >= sorular.length) {
+                // Sorular bittiğinde puanı ve "Ana Sayfaya Dön" butonunu göster
+                document.getElementById('soru').textContent = 'Test tamamlandı!';
+                document.getElementById('puan').textContent = 'Son Puan: ' + puan;
+                document.querySelectorAll('button[id^="cevap"]').forEach(button => button.style.display = 'none');
+                document.getElementById('anaSayfaButonu').style.display = 'block';
+                return;
+            }
+
             clearInterval(sureGoster); // Önceki süreyi temizle
             kalanSure = 10; // Süreyi yeniden başlat
 
             document.getElementById('soru').textContent = sorular[index];
             siklar[index].forEach((sik, i) => {
-                document.getElementById('sik' + (i + 1)).textContent = sik;
+                document.getElementById('cevap' + (i + 1)).textContent = sik;
             });
 
             // Puanı ekrana yazdır
@@ -68,28 +80,33 @@
                 if (kalanSure <= 0) {
                     clearInterval(sureGoster);
                     if (okumaDevamEdiyor) {
-                        aktifSoruIndex = (aktifSoruIndex + 1) % sorular.length;
+                        aktifSoruIndex++;
                         guncelleSoru(aktifSoruIndex);
                     }
                 } else {
                     document.getElementById('süre').textContent = 'Kalan süre: ' + kalanSure + ' saniye';
                     kalanSure--;
                 }
-            }, 1000);
+            }, 1000); 
         }
 
         // Butonlara tıklanınca bir sonraki soruya geç
-        document.querySelectorAll('button').forEach((button, index) => {
+        document.querySelectorAll('button[id^="cevap"]').forEach((button, index) => {
             button.addEventListener('click', () => {
                 // Doğru cevap verildiyse puanı artır
-                if (index === 0) {
-                    puan += (kalanSure+1) * 4;
+                if (siklar[aktifSoruIndex][index].trim() === cevaplar[aktifSoruIndex].trim()) {
+                    puan += (kalanSure + 1) * 4;
                 }
-                aktifSoruIndex = (aktifSoruIndex + 1) % sorular.length;
+                aktifSoruIndex++;
                 document.getElementById('süre').textContent = 'Kalan süre: ';
                 guncelleSoru(aktifSoruIndex);
             });
         });
+
+        // Ana sayfaya yönlendirme fonksiyonu
+        function anaSayfayaDon() {
+            window.location.href = 'index.html'; // Ana sayfa URL'sini buraya yazın
+        }
 
         // Veri okuma işlemini sonlandır
         window.addEventListener('beforeunload', () => {
