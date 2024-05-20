@@ -1,8 +1,8 @@
-Eray nerelidir ?
-a)suriye
-b)afganistan
-c)düzce
-d)samsun
+DNS'nin (Domain Name System) temel işlevi nedir?
+a) IP adreslerini alan adlarına çevirmek
+b) E-posta gönderme ve alma
+c) Dosya transferi yapmak
+d) Ağ trafiğini yönlendirmek
 yiğit nerelidir ?
 a)TÜRKİYE
 b)TÜRKİYE
