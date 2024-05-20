@@ -1,10 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+    background-image: url('background.png'); /* Arka plan resmi */
+    font-family: Arial, sans-serif; /* Metin fontu */
+    color: #333; /* Metin rengi */
+    margin: 0; /* Sayfanın kenar boşlukları */
+    padding: 0; /* Sayfanın iç boşlukları */
 }
-
+.container {
+    width: 80%; /* Sayfa içeriğinin genişliği */
+    margin: 0 auto; /* Sayfa içeriğinin ortalanması */
+    padding: 20px; /* İçerik alanı iç boşluğu */
+    background-color: rgba(255, 255, 255, 0.8); /* İçerik alanı arka plan rengi (şeffaflık eklenmiştir) */
+    border-radius: 10px; /* İçerik alanı kenar yuvarlama */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* İçerik alanı gölge */
+}
 h1 {
     text-align: center;
     margin-top: 20px;
@@ -38,4 +46,9 @@ button:hover {
     font-size: 16px;
     text-align: center;
     margin-top: 20px;
+}
+nav {
+    border-bottom: 5px solid black ;
+    padding: 10px 0; /* Üst bar iç boşluğu */
+    text-align: center; /* Metin ortalaması */
 }
