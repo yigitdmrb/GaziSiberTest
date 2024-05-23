@@ -1,25 +1,48 @@
-DNS'nin (Domain Name System) temel işlevi nedir?
-a) E-posta gönderme ve alma
-b) IP adreslerini alan adlarına çevirmek
-c) Dosya transferi yapmak
-d) Ağ trafiğini yönlendirmek
-b) IP adreslerini alan adlarına çevirmek
-yiğit nerelidir ?
-a)TÜRKİYE
-b)TÜRKİYE
-c)TÜRKİYE
-d)TÜRKİYE
-a)TÜRKİYE
-ahmet nerelidir ?
-a)osmaniye
-b)afganistan
-c)düzce
-d)samsun
-a)osmaniye
-murat nerelidir ?
-a)kırgızistan
-b)manavgat
-c)düzce
-d)samsun
-a)kırgızistan
-
+Aşağıdaki şıklardan hangisi bir siber saldırı türü değildir?
+a) Phishing (Oltalama)
+b) Malware (Kötü Amaçlı Yazılım)
+c) Firewall (Güvenlik Duvarı)
+d) Denial of Service (Hizmet Engelleme)
+c) Firewall (Güvenlik Duvarı)
+Güçlü bir parola oluşturmak için hangi kriterlere dikkat edilmelidir?
+a) Parola en az 8 karakter uzunluğunda olmalı
+b) Büyük ve küçük harfler içermeli
+c) Sayılar ve özel karakterler içermeli
+d) Tüm şıklar doğru
+d) Tüm şıklar doğru
+Aşağıdakilerden hangisi sosyal mühendislik saldırısının bir örneğidir?
+a) Güvenlik açığı taraması
+b) E-posta ekine zararlı yazılım yerleştirme
+c) Telefonla arayıp kendini yetkili biri gibi tanıtarak bilgi toplama
+d) Brute force (kaba kuvvet) saldırısı
+c) Telefonla arayıp kendini yetkili biri gibi tanıtarak bilgi toplama
+Bir veri şifreleme yöntemi olan AES, hangi şifreleme türüne aittir?
+a) Simetrik şifreleme
+b) Asimetrik şifreleme
+c) Karma (hash) fonksiyonları
+d) Dijital imzalar
+a) Simetrik şifreleme
+WPA2, aşağıdakilerden hangisini güvenli hale getirmek için kullanılan bir protokoldür?
+a) Web tarayıcıları
+b) Kablosuz ağlar
+c) E-posta iletişimi
+d) Dosya transferi
+b) Kablosuz ağlar
+1980'lerin ünlü hacker'ı Kevin Mitnick, FBI tarafından en çok aranan bilgisayar suçlularından biriydi. Mitnick hangi tür saldırılarıyla tanınmıştır?
+a) Sosyal mühendislik ve telefon hatları üzerinden yapılan hacklemeler
+b) Web sitelerine zararlı yazılım yerleştirme
+c) Bilgisayar virüsleri yayma
+d) Kripto para hırsızlığı
+a) Sosyal mühendislik ve telefon hatları üzerinden yapılan hacklemeler
+Adrian Lamo, "evsiz hacker" olarak da bilinir. Lamo hangi ünlü şirketin sistemine izinsiz erişim sağladığı için tanınır?
+a) Google
+b) Yahoo
+c) Microsoft
+d) Facebook
+c) Microsoft
+Gary McKinnon, 2002 yılında hangi ülkenin askeri bilgisayar sistemlerine girdiği için "en büyük askeri bilgisayar hack'i" olarak anıldı?
+a) Rusya
+b) Çin
+c) ABD
+d) İngiltere
+c) ABD
