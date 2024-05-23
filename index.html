@@ -84,8 +84,6 @@
                         guncelleSoru(aktifSoruIndex);
                     }
                 } else {
-                    
-                    
                     document.getElementById('süre').textContent = 'Kalan süre: ' + kalanSure + ' saniye';
                     kalanSure--;
                     if(document.getElementById('anaSayfaButonu').style.display === 'block'){document.getElementById('süre').textContent='';}
@@ -110,6 +108,7 @@
         function anaSayfayaDon() {
             window.location.href = 'index.html'; // Ana sayfa URL'sini buraya yazın
         }
+        
 
         // Veri okuma işlemini sonlandır
         window.addEventListener('beforeunload', () => {
