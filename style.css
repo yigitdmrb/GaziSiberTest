@@ -37,6 +37,10 @@ button {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+button.correct {
+    background-color: #00FF00; /* Doğru cevap rengi */
+}
+
 
 button:hover {
     background-color: #45a049;
